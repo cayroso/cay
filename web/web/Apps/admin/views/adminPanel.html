@@ -1,0 +1,30 @@
+﻿<div data-ng-show="isAuthenticated()">
+
+    <div class="col-md-3">
+        Admin Panel
+        <div class="panel panel-primary">
+            <div class="panel-heading">Manage Users</div>
+            <div class="list-group">
+                <a ui-sref="adminPanel.users.search" class="list-group-item">Search User</a>
+                <a ui-sref="adminPanel.users.create" class="list-group-item">Create User</a>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Manage Groups</div>
+            <div class="list-group">
+                <a class="list-group-item">Search Group</a>
+                <a class="list-group-item">Create Group</a>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Manage Roles</div>
+            <div class="list-group">
+                <a class="list-group-item">Search Role</a>
+                <a class="list-group-item">Create Role</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div data-ui-view></div>
+    </div>
+</div>

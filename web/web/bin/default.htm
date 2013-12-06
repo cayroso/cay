@@ -1,0 +1,124 @@
+<!DOCTYPE html public>
+<html lang="en" data-ng-app="app">
+<head>
+    <link runat="server" rel="shortcut icon" href="~/favicon.ico" type="image/x-icon" />
+    <link runat="server" rel="icon" href="~/favicon.ico" type="image/ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <script src="Scripts/jquery-2.0.3.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angularjs/angular.js"></script>
+</head>
+<!--<body style="padding-left: 5px; padding-right: 5px; margin-left: auto; margin-right: auto; overflow-x: hidden;"
+    data-ng-controller="appController" style="background-color: lightsteelblue;" class="authDemoApplication">-->
+<body data-ng-controller="appController" class="authDemoApplication" style="background-color:darkslateblue;">
+
+    <div class="container" style="background-color: white;min-height:600px;">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" data-ui-sref="home">cay</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" data-ng-show="isAuthenticated()">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a data-ui-sref="adminPanel">Admin</a></li>
+                    <!--<li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Security<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a data-ui-sref="users({title:'tangina2'})">Users</a></li>
+                            <li><a data-ui-sref="groups">Groups</a></li>
+                            <li><a href="#"></a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>-->
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" data-ng-model="url" class="form-control input-sm" placeholder="Search" title="request">
+                        </div>
+                        <button data-ng-click="getResource(url)" class="btn btn-primary btn-sm">Submit</button>
+                    </form>
+                    <li class="divider"></li>
+
+                    <li class="dropdown" data-ng-show="isAuthenticated()">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">{{userName}}<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Edit Info</a></li>
+                            <li><a href="#/dashboard">Change Password</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li class="divider"></li>
+                            <li><a data-ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Logout</a></li>
+                        </ul>
+                    </li>
+                    <li data-ng-show="!isAuthenticated()"><a data-ng-click="showLogin()"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div class="row" data-ui-view>
+        </div>
+
+
+        <div id="login-holder" style="display: none;">
+            <div id="loginbox" class="col-md-6 col-md-offset-3">
+                <div id="login-inner" ng:controller="loginController" class="panel panel-primary">
+                    <div class="panel-heading">Login</div>
+                    <div class="panel-body">
+                        <form ng-submit="submit()">
+                            <dl>
+                                <dt>User Name:</dt>
+                                <dd>
+                                    <input type='text' data-ng-model='userName' /></dd>
+                                <dt>Password:</dt>
+                                <dd>
+                                    <input type='password' data-ng-model='password' /></dd>
+                            </dl>
+                            <input class="btn btn-primary" type='submit' value='Sign In' />
+                        </form>
+                        <div style="color: red;" data-ng-show="loginError">
+                            <pre>Error: {{loginError}}</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+
+
+    <script src="Scripts/angularjs/angular-route.js"></script>
+    <script src="Scripts/angularjs/angular-cookies.js"></script>
+    <script src="Scripts/AngularUI/ui-router.js"></script>
+    <script src="Scripts/http-auth-interceptor/http-auth-interceptor.js"></script>
+    <script src="app.js"></script>
+
+    <script src="Apps/common/services/SessionSvc.js"></script>
+
+    <script src="apps/common/controllers/login.js"></script>
+    <script src="apps/admin/controllers/account/users.js"></script>
+
+
+
+</body>
+</html>

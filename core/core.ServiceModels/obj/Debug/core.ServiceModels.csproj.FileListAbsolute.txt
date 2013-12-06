@@ -1,0 +1,13 @@
+D:\cay2\cay\core\core.ServiceModels\obj\Debug\core.ServiceModels.csprojResolveAssemblyReference.cache
+D:\cay2\cay\core\core.ServiceModels\bin\Debug\core.ServiceModels.dll
+D:\cay2\cay\core\core.ServiceModels\bin\Debug\core.ServiceModels.pdb
+D:\cay2\cay\core\core.ServiceModels\obj\Debug\core.ServiceModels.dll
+D:\cay2\cay\core\core.ServiceModels\obj\Debug\core.ServiceModels.pdb
+D:\cay2\cay\core\core.ServiceModels\bin\Debug\ServiceStack.Common.dll
+D:\cay2\cay\core\core.ServiceModels\bin\Debug\ServiceStack.Interfaces.dll
+D:\cay2\cay\core\core.ServiceModels\bin\Debug\ServiceStack.OrmLite.dll
+D:\cay2\cay\core\core.ServiceModels\bin\Debug\ServiceStack.OrmLite.SqlServer.dll
+D:\cay2\cay\core\core.ServiceModels\bin\Debug\ServiceStack.Text.dll
+D:\cay2\cay\core\core.ServiceModels\bin\Debug\ServiceStack.Common.xml
+D:\cay2\cay\core\core.ServiceModels\bin\Debug\ServiceStack.Interfaces.xml
+D:\cay2\cay\core\core.ServiceModels\bin\Debug\ServiceStack.Text.xml

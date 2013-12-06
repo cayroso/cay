@@ -1,0 +1,10 @@
+F:\cay2\cay\app\app.ServiceDtos\bin\Debug\app.ServiceDtos.dll
+F:\cay2\cay\app\app.ServiceDtos\bin\Debug\app.ServiceDtos.pdb
+F:\cay2\cay\app\app.ServiceDtos\bin\Debug\ServiceStack.Common.dll
+F:\cay2\cay\app\app.ServiceDtos\bin\Debug\ServiceStack.Interfaces.dll
+F:\cay2\cay\app\app.ServiceDtos\bin\Debug\ServiceStack.Text.dll
+F:\cay2\cay\app\app.ServiceDtos\bin\Debug\ServiceStack.Common.xml
+F:\cay2\cay\app\app.ServiceDtos\bin\Debug\ServiceStack.Interfaces.xml
+F:\cay2\cay\app\app.ServiceDtos\bin\Debug\ServiceStack.Text.xml
+F:\cay2\cay\app\app.ServiceDtos\obj\Debug\app.ServiceDtos.dll
+F:\cay2\cay\app\app.ServiceDtos\obj\Debug\app.ServiceDtos.pdb

@@ -1,0 +1,45 @@
+﻿@inherits ServiceStack.Razor.ViewPage
+@{
+    
+}
+<html>
+<head>
+    <link href=@Url.Content("~/Content/bootstrap/bootstrap.css") rel="stylesheet" />
+</head>
+<body class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Login
+        </div>
+        <div class="panel-body">
+            @if (Request.QueryString["error"] != null)
+            {
+                <p style="color: red;">
+                    @Request.QueryString["error"]
+                </p>
+            }
+
+            <form action='/auth/credentials' method='POST'>
+                <input type='hidden' name='Continue' value='@Request.QueryString["redirect"]' />
+                <dl>
+                    <dt>User Name:</dt>
+                    <dd>
+                        <input type='text' name='UserName' value="admin" /></dd>
+                    <dt>Password:</dt>
+                    <dd>
+                        <input type='password' name='Password' value="1234" /></dd>
+                </dl>
+                <input class="btn btn-primary" type='submit' value='Sign In' />
+            </form>
+        </div>
+    </div>
+    @if (Request.QueryString["redirect"] != null)
+    {
+        <div id="content">
+            <p>
+                Autentication is required to view: <b>@Request.QueryString["redirect"]</b>
+            </p>
+        </div>
+    }
+</body>
+</html>

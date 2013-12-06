@@ -1,0 +1,41 @@
+﻿<div data-ng-show="isAuthenticated()" style="background-color: papayawhip;">
+    <div>
+        <a href="authorized/groups/admin">Accept</a>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Search Users</div>
+            <div class="panel-body">
+                <div>
+                    Criteria
+                    <div>
+                        <div class="col-md-3">
+                            Username:
+                            <input type="text" />
+                        </div>
+                        <div class="col-md-3">
+                            Email:
+                            <input type="text" />
+                        </div>
+                        <div class="col-md-3">
+                            Firstname:
+                            <input type="text" />
+                        </div>
+                        <div class="col-md-3">
+                            Lastname:
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm">Search</button>
+                </div>
+                <div>
+                    
+                    <table class="table table-condensed table-bordered">
+                        <caption>Result</caption>
+                        <tr>
+                            <td>no result</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

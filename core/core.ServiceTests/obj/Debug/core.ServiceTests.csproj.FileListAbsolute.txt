@@ -1,0 +1,4 @@
+D:\cay2\cay\core\core.ServiceTests\bin\Debug\core.ServiceTests.dll
+D:\cay2\cay\core\core.ServiceTests\bin\Debug\core.ServiceTests.pdb
+D:\cay2\cay\core\core.ServiceTests\obj\Debug\core.ServiceTests.dll
+D:\cay2\cay\core\core.ServiceTests\obj\Debug\core.ServiceTests.pdb

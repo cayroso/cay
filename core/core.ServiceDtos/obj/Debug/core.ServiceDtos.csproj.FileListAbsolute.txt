@@ -1,0 +1,4 @@
+D:\cay2\cay\core\core.ServiceDtos\bin\Debug\core.ServiceDtos.dll
+D:\cay2\cay\core\core.ServiceDtos\bin\Debug\core.ServiceDtos.pdb
+D:\cay2\cay\core\core.ServiceDtos\obj\Debug\core.ServiceDtos.dll
+D:\cay2\cay\core\core.ServiceDtos\obj\Debug\core.ServiceDtos.pdb

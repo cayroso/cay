@@ -1,0 +1,32 @@
+﻿<div class="row">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Login
+        </div>
+        <div class="panel-body">
+
+            <div style="color: red;">
+                <pre>{{errors}}</pre>
+            </div>
+
+
+            <!--<form action='/auth/credentials' method='POST'>-->
+            <input type='hidden' name='Continue' data-ng-model='redirect' />
+            <dl>
+                <dt>User Name:</dt>
+                <dd>
+                    <input type='text' data-ng-model='Username' value="admin" /></dd>
+                <dt>Password:</dt>
+                <dd>
+                    <input type='password' data-ng-model='Password' value="1234" /></dd>
+            </dl>
+            <input type="button" class="btn btn-primary" data-ng-click="login()" value='Sign In' />
+            <!--</form>-->
+        </div>
+    </div>
+
+    <div>
+        Autentication is required to view: <b>{{redirect}}</b>
+    </div>
+
+</div>

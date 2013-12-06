@@ -1,0 +1,5 @@
+D:\cay2\cay\core\core.ServiceInterfaces\bin\Debug\core.ServiceInterfaces.dll
+D:\cay2\cay\core\core.ServiceInterfaces\bin\Debug\core.ServiceInterfaces.pdb
+D:\cay2\cay\core\core.ServiceInterfaces\obj\Debug\core.ServiceInterfaces.csprojResolveAssemblyReference.cache
+D:\cay2\cay\core\core.ServiceInterfaces\obj\Debug\core.ServiceInterfaces.dll
+D:\cay2\cay\core\core.ServiceInterfaces\obj\Debug\core.ServiceInterfaces.pdb
